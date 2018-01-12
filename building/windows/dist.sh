@@ -1,9 +1,9 @@
 
-cp src/VERGEd.exe .
-cp src/VERGEd-qt.exe .
-strip VERGEd.exe
-strip VERGEd-qt.exe
-zip release_windows.zip VERGEd.exe VERGEd-qt.exe
+cp src/Nanited.exe .
+cp src/Nanited-qt.exe .
+strip Nanited.exe
+strip Nanited-qt.exe
+zip release_windows.zip Nanited.exe Nanited-qt.exe
 
 # for pushing releases
 sudo apt-get --yes -qq install ruby curl > /dev/null

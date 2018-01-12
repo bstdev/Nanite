@@ -11,13 +11,13 @@
   </array>
 
   <key>CFBundleIconFile</key>
-  <string>verge.icns</string>
+  <string>nanite.icns</string>
 
   <key>CFBundlePackageType</key>
   <string>APPL</string>
 
   <key>CFBundleGetInfoString</key>
-  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2014-@COPYRIGHT_YEAR@ The VERGE Core developers</string>
+  <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@, Copyright © 2014-@COPYRIGHT_YEAR@ The Nanite Core developers</string>
 
   <key>CFBundleShortVersionString</key>
   <string>@CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@</string>
@@ -29,10 +29,10 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>VERGE-Qt</string>
+  <string>Nanite-Qt</string>
 
   <key>CFBundleIdentifier</key>
-  <string>com.vergecurrency.VERGE-Qt</string>
+  <string>com.nanitecurrency.Nanite-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>

@@ -1,2 +1,2 @@
-debian/bin/VERGEd usr/bin
-src/VERGEd usr/lib/VERGE/
+debian/bin/Nanited usr/bin
+src/Nanited usr/lib/Nanite/

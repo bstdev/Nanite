@@ -6,13 +6,13 @@ define(_CLIENT_VERSION_REVISION, 1)
 define(_CLIENT_VERSION_BUILD, 0)
 define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2018)
-AC_INIT([VERGE Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/vergecurrency/VERGE/issues],[verge],[http://VERGEcurrency.com/])
+AC_INIT([Nanite Core],[_CLIENT_VERSION_MAJOR._CLIENT_VERSION_MINOR._CLIENT_VERSION_REVISION],[https://github.com/nanitecurrency/Nanite/issues],[nanite],[http://Nanitecurrency.com/])
 AC_CONFIG_AUX_DIR([src/build-aux])
 AC_CONFIG_MACRO_DIR([src/m4])
 AC_CANONICAL_HOST
-AH_TOP([#ifndef VERGE_CONFIG_H])
-AH_TOP([#define VERGE_CONFIG_H])
-AH_BOTTOM([#endif //VERGE_CONFIG_H])
+AH_TOP([#ifndef Nanite_CONFIG_H])
+AH_TOP([#define Nanite_CONFIG_H])
+AH_BOTTOM([#endif //Nanite_CONFIG_H])
 
 # This m4 will only be used if a system copy cannot be found. This is helpful
 # on systems where autotools are installed but the pkg-config macros are not in
@@ -128,7 +128,7 @@ AC_ARG_ENABLE([glibc-back-compat],
 AC_ARG_WITH([protoc-bindir],[AS_HELP_STRING([--with-protoc-bindir=BIN_DIR],[specify protoc bin path])], [protoc_bin_path=$withval], [])
 
 AC_CONFIG_SRCDIR([src])
-AC_CONFIG_HEADERS([src/config/verge-config.h])
+AC_CONFIG_HEADERS([src/config/nanite-config.h])
 
 dnl Checks for programs.
 AC_PROG_CXX
@@ -324,7 +324,7 @@ dnl Check for pthread compile/link requirements
 AX_PTHREAD
 INCLUDES="$INCLUDES $PTHREAD_CFLAGS"
 
-# The following macro will add the necessary defines to verge-config.h, but
+# The following macro will add the necessary defines to nanite-config.h, but
 # they also need to be passed down to any subprojects. Pull the results out of
 # the cache and add them to CPPFLAGS.
 AC_SYS_LARGEFILE
@@ -572,7 +572,7 @@ fi
 
 BITCOIN_QT_PATH_PROGS([PROTOC], [protoc],$protoc_bin_path)
 
-AC_MSG_CHECKING([whether to build VERGEd])
+AC_MSG_CHECKING([whether to build Nanited])
 AM_CONDITIONAL([BUILD_BITCOIND], [test x$build_bitcoind = xyes])
 AC_MSG_RESULT($build_bitcoind)
 

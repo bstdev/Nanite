@@ -1,10 +1,10 @@
 // Copyright (c) 2011-2013 The Bitcoin developers
-// Copyright (c) 2016 The Verge developers
+// Copyright (c) 2016 The Nanite developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "verge-config.h" /* for USE_QRCODE */
+#include "nanite-config.h" /* for USE_QRCODE */
 #endif
 
 #include "qrcodedialog.h"
@@ -92,7 +92,7 @@ void QRCodeDialog::genCode()
 
 QString QRCodeDialog::getURI()
 {
-    QString ret = QString("verge:%1").arg(address);
+    QString ret = QString("nanite:%1").arg(address);
     int paramCount = 0;
 
     ui->outUri->clear();

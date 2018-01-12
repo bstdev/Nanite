@@ -1,6 +1,6 @@
 [Protocol]
-exec=VERGE-qt '%u'
-protocol=verge
+exec=Nanite-qt '%u'
+protocol=nanite
 input=none
 output=none
 helper=true

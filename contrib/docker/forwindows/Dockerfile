@@ -40,7 +40,7 @@ ENV CXXFLAGS $CFLAGS
 ENV CPPFLAGS $CFLAGS
 ENV BOOST_ROOT /tmp/boost_1_55_0
 # TODO: change fork/branch
-RUN git clone https://github.com/mkinney/verge -b test-work ; cd verge ; ./autogen.sh --host=i686-w64-mingw32.static- 
+RUN git clone https://github.com/mkinney/nanite -b test-work ; cd nanite ; ./autogen.sh --host=i686-w64-mingw32.static- 
 
-RUN cd /tmp/verge && ./configure --host=i686-w64-mingw32.static && make
+RUN cd /tmp/nanite && ./configure --host=i686-w64-mingw32.static && make
 

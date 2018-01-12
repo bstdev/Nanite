@@ -381,7 +381,7 @@ static const char test_ri2[] =
   "router-signature\n"
   "-----BEGIN SIGNATURE-----\n"
   "BaUB+aFPQbb3BwtdzKsKqV3+6cRlSqJF5bI3UTmwRoJk+Z5Pz+W5NWokNI0xArHM\n"
-  "T4T5FZCCP9350jXsUCIvzyIyktU6aVRCGFt76rFlo1OETpN8GWkMnQU0w18cxvgS\n"
+  "T4T5FZCCP9350jXsUCIvzyIyktU6aVRCGFt76rFlo1OETpN8GWkMnQU0w18cNTTS\n"
   "cf34GXHv61XReJF3AlzNHFpbrPOYmowmhrTULKyMqow=\n"
   "-----END SIGNATURE-----\n";
 

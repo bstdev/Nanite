@@ -680,7 +680,7 @@ dirserv_add_descriptor(routerinfo_t *ri, const char **msg, const char *source)
   /* Check whether this descriptor is semantically identical to the last one
    * from this server.  (We do this here and not in router_add_to_routerlist
    * because we want to be able to accept the newest router descriptor that
-   * another authority has, so we all converge on the same one.) */
+   * another authority has, so we all connanite on the same one.) */
   ri_old = router_get_mutable_by_digest(ri->cache_info.identity_digest);
   if (ri_old && ri_old->cache_info.published_on < ri->cache_info.published_on
       && router_differences_are_cosmetic(ri_old, ri)

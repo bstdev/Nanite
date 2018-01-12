@@ -160,7 +160,7 @@ min-width: 125px;
 max-width: 125px;</string>
        </property>
        <property name="text">
-        <string>Verge-client</string>
+        <string>Nanite-client</string>
        </property>
       </widget>
      </item>

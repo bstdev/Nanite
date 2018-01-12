@@ -1,5 +1,5 @@
 ---
-name: "verge-deps"
+name: "nanite-deps"
 suites:
 - "precise"
 architectures:
@@ -95,4 +95,4 @@ script: |
   done
   #
   cd $STAGING
-  find include lib bin host | sort | zip -X@ $OUTDIR/verge-deps-linux${GBUILD_BITS}-gitian-r2.zip
+  find include lib bin host | sort | zip -X@ $OUTDIR/nanite-deps-linux${GBUILD_BITS}-gitian-r2.zip

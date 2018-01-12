@@ -128,11 +128,11 @@ fi
 
 #// Clone files from repo, Permissions and make
 
-git clone https://github.com/vergecurrency/VERGE
-cd VERGE
+git clone https://github.com/nanitecurrency/Nanite
+cd Nanite
 sudo sh autogen.sh
-chmod 777 ~/VERGE/share/genbuild.sh
-chmod 777 ~/VERGE/src/leveldb/build_detect_platform
+chmod 777 ~/Nanite/share/genbuild.sh
+chmod 777 ~/Nanite/src/leveldb/build_detect_platform
 
 
 
@@ -171,7 +171,7 @@ fi
 
 make -j$(nproc)
 
-if [ -e ~/VERGE/src/qt/VERGE-qt ]; then
+if [ -e ~/Nanite/src/qt/Nanite-qt ]; then
 #sudo apt-get -y install pulseaudio
 #sudo apt-get -y install portaudio19-dev
 # synthetic voice 
@@ -194,36 +194,36 @@ openssl rand -hex 4096 | padsp tee /dev/audio > /dev/null
 sleep 1.3
 pactl play-sample test2
 #espeak mission,complete
-sudo strip ~/VERGE/src/VERGEd
-sudo strip ~/VERGE/src/qt/VERGE-qt
+sudo strip ~/Nanite/src/Nanited
+sudo strip ~/Nanite/src/qt/Nanite-qt
 sudo make install
 else
-echo "Compile fail not VERGE-qt present"
+echo "Compile fail not Nanite-qt present"
 fi
 
 cd ~
 
 #// Create the config file with random user and password
 
-mkdir -p ~/.VERGE
-if [ -e ~/.VERGE/VERGE.conf ]; then
-    cp -a ~/.VERGE/VERGE.conf ~/.VERGE/VERGE.bak
+mkdir -p ~/.Nanite
+if [ -e ~/.Nanite/Nanite.conf ]; then
+    cp -a ~/.Nanite/Nanite.conf ~/.Nanite/Nanite.bak
 fi
-echo "rpcuser="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 26 ; echo '') '\n'"rpcpassword="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 26 ; echo '') '\n'"rpcport=20102" '\n'"port=21102" '\n'"daemon=1" '\n'"listen=1" '\n'"server=1" '\n'"addnode=103.18.40.125:21102" '\n'"addnode=104.131.144.82:21102" '\n'"addnode=138.197.68.130:21102" '\n'"addnode=144.76.167.66:21102" '\n'"addnode=152.186.36.86:21102" '\n'"addnode=159.203.121.202:21102" '\n'"addnode=172.104.157.38:21102" '\n'"addnode=192.99.7.127:21102" '\n'"addnode=219.89.84.46:21102" '\n'"addnode=45.32.129.168:21102" '\n'"addnode=45.55.59.206:21102" '\n'"addnode=46.4.64.68:21102" '\n'"addnode=51.15.46.1:21102" '\n'"addnode=52.9.109.214:21102" '\n'"addnode=66.55.64.183:21102" '\n'"addnode=67.167.207.164:21102" '\n'"addnode=78.46.190.152:21102"> ~/.VERGE/VERGE.conf
+echo "rpcuser="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 26 ; echo '') '\n'"rpcpassword="$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 26 ; echo '') '\n'"rpcport=20102" '\n'"port=21102" '\n'"daemon=1" '\n'"listen=1" '\n'"server=1" '\n'"addnode=103.18.40.125:21102" '\n'"addnode=104.131.144.82:21102" '\n'"addnode=138.197.68.130:21102" '\n'"addnode=144.76.167.66:21102" '\n'"addnode=152.186.36.86:21102" '\n'"addnode=159.203.121.202:21102" '\n'"addnode=172.104.157.38:21102" '\n'"addnode=192.99.7.127:21102" '\n'"addnode=219.89.84.46:21102" '\n'"addnode=45.32.129.168:21102" '\n'"addnode=45.55.59.206:21102" '\n'"addnode=46.4.64.68:21102" '\n'"addnode=51.15.46.1:21102" '\n'"addnode=52.9.109.214:21102" '\n'"addnode=66.55.64.183:21102" '\n'"addnode=67.167.207.164:21102" '\n'"addnode=78.46.190.152:21102"> ~/.Nanite/Nanite.conf
 
 #// Extract http link, download blockchain and install it.
 
-echo -n "Do you wish to download the complete VERGE Blockchain (y/n)?"
+echo -n "Do you wish to download the complete Nanite Blockchain (y/n)?"
 read answer
 if echo "$answer" | grep -iq "^y" ;then
-    sudo rm go.sh-Verge-Blockchain.zip
+    sudo rm go.sh-Nanite-Blockchain.zip
 
-    wget --no-check-certificate https://verge-blockchain.com/blockchain/go.sh-Verge-Blockchain.zip
+    wget --no-check-certificate https://nanite-blockchain.com/blockchain/go.sh-Nanite-Blockchain.zip
 
     #checksum
     sudo rm blockchain
-    wget https://www.vergecurrency.com/checksums/blockchain
-    md5sum go.sh-Verge-Blockchain.zip > md5
+    wget https://www.nanitecurrency.com/checksums/blockchain
+    md5sum go.sh-Nanite-Blockchain.zip > md5
     checksum="$(grep $(cat md5) blockchain)"
     if [ -z "$checksum" ];
     then
@@ -232,28 +232,28 @@ if echo "$answer" | grep -iq "^y" ;then
     echo "MD5 is matching...Success"
     fi
 
-    unzip -o go.sh-Verge-Blockchain.zip -d ~/.VERGE
-    sudo rm go.sh-Verge-Blockchain.zip
+    unzip -o go.sh-Nanite-Blockchain.zip -d ~/.Nanite
+    sudo rm go.sh-Nanite-Blockchain.zip
 else
  echo "Blockchain will not be installed sync may be long"
 fi
 
 # Create Icon on Desktop and in menu
 mkdir -p ~/Desktop/
-sudo cp ~/VERGE/src/qt/res/icons/verge.png /usr/share/icons/
-echo '#!/usr/bin/env xdg-open''\n'"[Desktop Entry]"'\n'"Version=1.0"'\n'"Type=Application"'\n'"Terminal=false"'\n'"Icon[en]=/usr/share/icons/verge.png"'\n'"Name[en]=VERGE"'\n'"Exec=VERGE-qt"'\n'"Name=VERGE"'\n'"Icon=/usr/share/icons/verge.png"'\n'"Categories=Network;Internet;" > ~/Desktop/VERGE.desktop
-sudo chmod +x ~/Desktop/VERGE.desktop
-sudo cp ~/Desktop/VERGE.desktop /usr/share/applications/VERGE.desktop
-sudo chmod +x /usr/share/applications/VERGE.desktop
+sudo cp ~/Nanite/src/qt/res/icons/nanite.png /usr/share/icons/
+echo '#!/usr/bin/env xdg-open''\n'"[Desktop Entry]"'\n'"Version=1.0"'\n'"Type=Application"'\n'"Terminal=false"'\n'"Icon[en]=/usr/share/icons/nanite.png"'\n'"Name[en]=Nanite"'\n'"Exec=Nanite-qt"'\n'"Name=Nanite"'\n'"Icon=/usr/share/icons/nanite.png"'\n'"Categories=Network;Internet;" > ~/Desktop/Nanite.desktop
+sudo chmod +x ~/Desktop/Nanite.desktop
+sudo cp ~/Desktop/Nanite.desktop /usr/share/applications/Nanite.desktop
+sudo chmod +x /usr/share/applications/Nanite.desktop
 
-# Erase all VERGE compilation directory , cleaning
+# Erase all Nanite compilation directory , cleaning
 
 cd ~
-#sudo rm -Rf ~/VERGE
+#sudo rm -Rf ~/Nanite
 
-#// Start Verge
+#// Start Nanite
 
-VERGE-qt
-if [ -e ~/.VERGE/wallet.dat ]; then
-    cp ~/.VERGE/wallet.dat ~/vergewallet.bak
+Nanite-qt
+if [ -e ~/.Nanite/wallet.dat ]; then
+    cp ~/.Nanite/wallet.dat ~/nanitewallet.bak
 fi

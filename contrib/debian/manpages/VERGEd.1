@@ -1,19 +1,19 @@
-.TH VERGED "7" "April 2013" "verged 3.19" 
+.TH NaniteD "7" "April 2013" "nanited 3.19" 
 .SH NAME
-verged \- peer-to-peer network based digital currency
+nanited \- peer-to-peer network based digital currency
 .SH SYNOPSIS
-verge [options] <command> [params]  
+nanite [options] <command> [params]  
 .TP
-verge [options] help <command> - Get help for a command
+nanite [options] help <command> - Get help for a command
 .SH DESCRIPTION
-This  manual page documents the verged program. Verge is a peer-to-peer digital currency. Peer-to-peer (P2P) means that there is no central authority to issue new money or keep track of transactions. Instead, these tasks are managed collectively by the nodes of the network. Advantages:
+This  manual page documents the nanited program. Nanite is a peer-to-peer digital currency. Peer-to-peer (P2P) means that there is no central authority to issue new money or keep track of transactions. Instead, these tasks are managed collectively by the nodes of the network. Advantages:
 
-Verges can be sent easily through the Internet, without having to trust middlemen. Transactions are designed to be irreversible. Be safe from instability caused by fractional reserve banking and central banks. The limited inflation of the Verge system’s money supply is distributed evenly (by CPU power) throughout the network, not monopolized by banks.
+Nanites can be sent easily through the Internet, without having to trust middlemen. Transactions are designed to be irreversible. Be safe from instability caused by fractional reserve banking and central banks. The limited inflation of the Nanite system’s money supply is distributed evenly (by CPU power) throughout the network, not monopolized by banks.
 
 .SH OPTIONS
 .TP
 \fB\-conf=\fR<file>
-Specify configuration file (default: verge.conf)
+Specify configuration file (default: nanite.conf)
 .TP
 \fB\-gen\fR
 Generate coins
@@ -84,14 +84,14 @@ This help message
 \fBbackupwallet 'destination'\fR
 Safely copies *wallet.dat* to 'destination', which can be a directory or a path with filename.
 .TP
-\fBgetaccount 'vergeaddress'\fR
+\fBgetaccount 'naniteaddress'\fR
 Returns the account associated with the given address.
 .TP
-\fBsetaccount 'vergeaddress' ['account']\fR
+\fBsetaccount 'naniteaddress' ['account']\fR
 Sets the ['account'] associated with the given address. ['account'] may be omitted to remove an address from ['account'].
 .TP
 \fBgetaccountaddress 'account'\fR
-Returns a new verge address for 'account'.
+Returns a new nanite address for 'account'.
 .TP
 \fBgetaddressesbyaccount 'account'\fR
 Returns the list of addresses associated with the given 'account'.
@@ -112,7 +112,7 @@ Returns the number of connections to other nodes.
 Returns the proof-of-work difficulty as a multiple of the minimum difficulty.
 .TP
 \fBgetgenerate\fR
-Returns boolean true if server is trying to generate verges, false otherwise.
+Returns boolean true if server is trying to generate nanites, false otherwise.
 .TP
 \fBsetgenerate 'generate' ['genproclimit']\fR
 Generation is limited to ['genproclimit'] processors, -1 is unlimited.
@@ -124,13 +124,13 @@ Returns a recent hashes per second performance measurement while generating.
 Returns an object containing server information.
 .TP
 \fBgetnewaddress 'account'\fR
-Returns a new verge address for receiving payments. If 'account' is specified (recommended), it is added to the address book so payments received with the address will be credited to 'account'.
+Returns a new nanite address for receiving payments. If 'account' is specified (recommended), it is added to the address book so payments received with the address will be credited to 'account'.
 .TP
 \fBgetreceivedbyaccount 'account' ['minconf=1']\fR
 Returns the total amount received by addresses associated with 'account' in transactions with at least ['minconf'] confirmations.
 .TP
-\fBgetreceivedbyaddress 'vergeaddress' ['minconf=1']\fR
-Returns the total amount received by 'vergeaddress' in transactions with at least ['minconf'] confirmations.
+\fBgetreceivedbyaddress 'naniteaddress' ['minconf=1']\fR
+Returns the total amount received by 'naniteaddress' in transactions with at least ['minconf'] confirmations.
 .TP
 \fBgettransaction 'txid'\fR
 Returns information about a specific transaction, given hexadecimal transaction ID.
@@ -179,26 +179,26 @@ Returns a list of the last ['count'] transactions for 'account' - for all accoun
 \fBmove <'fromaccount'> <'toaccount'> <'amount'> ['minconf=1'] ['comment']\fR
 Moves funds between accounts.
 .TP
-\fBsendfrom* <'account'> <'vergeaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
-Sends amount from account's balance to 'vergeaddress'. This method will fail if there is less than amount verges with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
+\fBsendfrom* <'account'> <'naniteaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
+Sends amount from account's balance to 'naniteaddress'. This method will fail if there is less than amount nanites with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
 .TP     
-\fBsendtoaddress 'vergeaddress' 'amount' ['comment'] ['comment-to']\fR
-Sends amount from the server's available balance to 'vergeaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
+\fBsendtoaddress 'naniteaddress' 'amount' ['comment'] ['comment-to']\fR
+Sends amount from the server's available balance to 'naniteaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
 .TP    
 \fBstop\fR
-Stops the verge server.
+Stops the nanite server.
 .TP    
-\fBvalidateaddress 'vergeaddress'\fR
-Checks that 'vergeaddress' looks like a proper verge address. Returns an object containing:
+\fBvalidateaddress 'naniteaddress'\fR
+Checks that 'naniteaddress' looks like a proper nanite address. Returns an object containing:
 
     "isvalid" : true or false.
     "ismine"  : true if the address is in the server's wallet.
-    "address" : vergeaddress.
+    "address" : naniteaddress.
 
     *note: ismine and address are only returned if the address is valid.
 
 .SH "SEE ALSO"
-verge.conf(5)
+nanite.conf(5)
 .SH AUTHOR
 This manual page was written by Micah Anderson <micah@debian.org> for the Debian system (but may be used by others). Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, Version 3 or any later version published by the Free Software Foundation.
 

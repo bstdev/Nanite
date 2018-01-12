@@ -35,9 +35,9 @@ static const int MAX_URI_LENGTH = 255;
 /* QRCodeDialog -- size of exported QR Code image */
 #define EXPORT_IMAGE_SIZE 256
 
-#define QAPP_ORG_NAME "VERGE"
-#define QAPP_ORG_DOMAIN "VERGEcurrency.com"
-#define QAPP_APP_NAME_DEFAULT "VERGE-Qt"
-#define QAPP_APP_NAME_TESTNET "VERGE-Qt-testnet"
+#define QAPP_ORG_NAME "Nanite"
+#define QAPP_ORG_DOMAIN "Nanitecurrency.com"
+#define QAPP_APP_NAME_DEFAULT "Nanite-Qt"
+#define QAPP_APP_NAME_TESTNET "Nanite-Qt-testnet"
 
 #endif // GUICONSTANTS_H

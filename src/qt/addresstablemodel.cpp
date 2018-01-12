@@ -342,7 +342,7 @@ QModelIndex AddressTableModel::index(int row, int column, const QModelIndex &par
 
 void AddressTableModel::updateEntry(const QString &address, const QString &label, bool isMine, int status)
 {
-    // Update address book model from Verge Core
+    // Update address book model from Nanite Core
     priv->updateEntry(address, label, isMine, status);
 }
 

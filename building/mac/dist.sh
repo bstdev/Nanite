@@ -1,9 +1,9 @@
 
-cp src/VERGEd .
-cp src/qt/VERGE-qt .
-strip VERGEd
-strip VERGE-qt
-zip release_${VERGE_PLATFORM}.zip VERGEd VERGE-qt
+cp src/Nanited .
+cp src/qt/Nanite-qt .
+strip Nanited
+strip Nanite-qt
+zip release_${Nanite_PLATFORM}.zip Nanited Nanite-qt
 
 sudo easy_install appscript
 

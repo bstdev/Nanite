@@ -1,4 +1,4 @@
-# Dockerfile for Verge
+# Dockerfile for Nanite
 
 FROM debian:8.4
 
@@ -45,18 +45,18 @@ RUN apt-get -y install \
        qttools5-dev \
        qttools5-dev-tools
 
-RUN git clone https://github.com/vergecurrency/verge /coin/git
+RUN git clone https://github.com/nanitecurrency/nanite /coin/git
 
 WORKDIR /coin/git
 
-RUN ./autogen.sh && ./configure --with-gui=qt5 --with-incompatible-bdb && make && mv src/VERGEd /coin/VERGEd
+RUN ./autogen.sh && ./configure --with-gui=qt5 --with-incompatible-bdb && make && mv src/Nanited /coin/Nanited
 
 WORKDIR /coin
 VOLUME ["/coin/home"]
 
 ENV HOME /coin/home
 
-CMD ["/coin/VERGEd"]
+CMD ["/coin/Nanited"]
 
 # P2P, RPC
 EXPOSE 21102 20102

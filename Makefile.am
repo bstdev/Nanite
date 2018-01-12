@@ -4,21 +4,21 @@ SUBDIRS = src
 
 GZIP_ENV="-9n"
 
-BITCOIND_BIN=$(top_builddir)/src/VERGEd$(EXEEXT)
-BITCOIN_QT_BIN=$(top_builddir)/src/qt/VERGE-qt$(EXEEXT)
+BITCOIND_BIN=$(top_builddir)/src/Nanited$(EXEEXT)
+BITCOIN_QT_BIN=$(top_builddir)/src/qt/Nanite-qt$(EXEEXT)
 BITCOIN_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 
-OSX_APP=VERGE-Qt.app
-OSX_DMG=VERGE-Qt.dmg
+OSX_APP=Nanite-Qt.app
+OSX_DMG=Nanite-Qt.dmg
 OSX_DEPLOY_SCRIPT=$(top_srcdir)/contrib/macdeploy/macdeployqtplus
 OSX_FANCY_PLIST=$(top_srcdir)/contrib/macdeploy/fancy.plist
-OSX_INSTALLER_ICONS=$(top_srcdir)/src/qt/res/icons/verge.icns
+OSX_INSTALLER_ICONS=$(top_srcdir)/src/qt/res/icons/nanite.icns
 OSX_PLIST=$(top_srcdir)/share/qt/Info.plist #not installed
 OSX_QT_TRANSLATIONS = da,de,es,hu,ru,uk,zh_CN,zh_TW
 
 DIST_DOCS = $(wildcard doc/*.md) $(wildcard doc/release-notes/*.md)
 
-WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/verge.ico \
+WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/nanite.ico \
   $(top_srcdir)/share/pixmaps/nsis-header.bmp \
   $(top_srcdir)/share/pixmaps/nsis-wizard.bmp \
   $(top_srcdir)/doc/README_windows.txt
@@ -66,17 +66,17 @@ $(OSX_APP)/Contents/Info.plist: $(OSX_PLIST)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/Resources/verge.icns: $(OSX_INSTALLER_ICONS)
+$(OSX_APP)/Contents/Resources/nanite.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/MacOS/VERGE-Qt: $(BITCOIN_QT_BIN)
+$(OSX_APP)/Contents/MacOS/Nanite-Qt: $(BITCOIN_QT_BIN)
 	$(MKDIR_P) $(@D)
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
 
 OSX_APP_BUILT=$(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
-  $(OSX_APP)/Contents/Resources/verge.icns $(OSX_APP)/Contents/Info.plist \
-  $(OSX_APP)/Contents/MacOS/VERGE-Qt
+  $(OSX_APP)/Contents/Resources/nanite.icns $(OSX_APP)/Contents/Info.plist \
+  $(OSX_APP)/Contents/MacOS/Nanite-Qt
 
 if BUILD_DARWIN
 $(OSX_DMG): $(OSX_APP_BUILT) $(OSX_PACKAGING)
@@ -89,7 +89,7 @@ $(OSX_DMG): $(OSX_APP_BUILT) $(OSX_PACKAGING)
 	$(INSTALL) contrib/macdeploy/background.png dist/.background
 	$(INSTALL) contrib/macdeploy/DS_Store dist/.DS_Store
 	cd dist; $(LN_S) /Applications Applications
-	$(GENISOIMAGE) -no-cache-inodes -l -probe -V "VERGE-Qt" -no-pad -r -apple -o $@ dist
+	$(GENISOIMAGE) -no-cache-inodes -l -probe -V "Nanite-Qt" -no-pad -r -apple -o $@ dist
 endif
 
 if TARGET_DARWIN
@@ -129,7 +129,7 @@ test_bitcoin_filtered.info: test_bitcoin.info
 block_test.info: test_bitcoin_filtered.info
 	$(MKDIR_P) qa/tmp
 	-@TIMEOUT=15 qa/pull-tester/run-bitcoind-for-test.sh $(JAVA) -jar $(JAVA_COMPARISON_TOOL) qa/tmp/compTool 0
-	$(LCOV) -c -d $(abs_builddir)/src --t VERGEJBlockTest -o $@
+	$(LCOV) -c -d $(abs_builddir)/src --t NaniteJBlockTest -o $@
 	$(LCOV) -z -d $(abs_builddir)/src
 	$(LCOV) -z -d $(abs_builddir)/src/leveldb
 

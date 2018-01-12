@@ -1,9 +1,9 @@
-# Dockerfile for Verge
-# http://vergecurrency.com/
+# Dockerfile for Nanite
+# http://nanitecurrency.com/
 # https://bitcointalk.org/index.php?topic=1365894
-# https://github.com/vergecurrency/verge
+# https://github.com/nanitecurrency/nanite
 
-# https://github.com/vergecurrency/Docker-Verge-Daemon.git
+# https://github.com/nanitecurrency/Docker-Nanite-Daemon.git
 #  Jeremiah Buddenhagen <bitspill@bitspill.net>
 
 FROM ubuntu:14.04
@@ -53,18 +53,18 @@ RUN apt-get update --yes > /dev/null && \
        qttools5-dev-tools \
       > /dev/null
 
-RUN git clone https://github.com/vergecurrency/VERGE.git /coin/git
+RUN git clone https://github.com/nanitecurrency/Nanite.git /coin/git
 
 WORKDIR /coin/git
 
-RUN ./autogen.sh && ./configure --with-gui=qt5 && make && mv src/VERGEd /coin/VERGEd
+RUN ./autogen.sh && ./configure --with-gui=qt5 && make && mv src/Nanited /coin/Nanited
 
 WORKDIR /coin
 VOLUME ["/coin/home"]
 
 ENV HOME /coin/home
 
-CMD ["/coin/VERGEd"]
+CMD ["/coin/Nanited"]
 
 # P2P, RPC
 EXPOSE 21102 20102

@@ -1,5 +1,5 @@
 ---
-name: "verge"
+name: "nanite"
 suites:
 - "precise"
 architectures:
@@ -19,15 +19,15 @@ packages:
 - "gettext"
 reference_datetime: "2013-06-01 00:00:00"
 remotes:
-- "url": "https://github.com/VERGETeam/fair-coin.git"
+- "url": "https://github.com/NaniteTeam/fair-coin.git"
   "dir": "fair-coin"
 files:
 - "qt-win32-5.2.1-gitian-r1.zip"
 - "qt-win64-5.2.1-gitian-r1.zip"
 - "boost-win32-1.55.0-gitian-r1.zip"
 - "boost-win64-1.55.0-gitian-r1.zip"
-- "verge-deps-win32-gitian-r2.zip"
-- "verge-deps-win64-gitian-r2.zip"
+- "nanite-deps-win32-gitian-r2.zip"
+- "nanite-deps-win64-gitian-r2.zip"
 - "protobuf-win32-2.5.0-gitian-r1.zip"
 - "protobuf-win64-2.5.0-gitian-r1.zip"
 script: |
@@ -61,7 +61,7 @@ script: |
     cd $STAGING
     unzip $INDIR/qt-win${BITS}-5.2.1-gitian-r1.zip
     unzip $INDIR/boost-win${BITS}-1.55.0-gitian-r1.zip
-    unzip $INDIR/verge-deps-win${BITS}-gitian-r2.zip
+    unzip $INDIR/nanite-deps-win${BITS}-gitian-r2.zip
     unzip $INDIR/protobuf-win${BITS}-2.5.0-gitian-r1.zip
     if [ "$NEEDDIST" == "1" ]; then
       # Make source code archive which is architecture independent so it only needs to be done once
@@ -69,7 +69,7 @@ script: |
       ./autogen.sh
       ./configure --bindir=$OUTDIR --prefix=$STAGING --host=$HOST --disable-tests --with-qt-plugindir=$STAGING/plugins --with-qt-incdir=$STAGING/include --with-qt-bindir=$STAGING/host/bin --with-boost=$STAGING --disable-maintainer-mode --with-protoc-bindir=$STAGING/host/bin --disable-dependency-tracking CPPFLAGS="-I$STAGING/include ${OPTFLAGS}" LDFLAGS="-L$STAGING/lib ${OPTFLAGS}" CXXFLAGS="-frandom-seed=fair-coin ${OPTFLAGS}"
       make dist
-      DISTNAME=`echo verge-*.tar.gz`
+      DISTNAME=`echo nanite-*.tar.gz`
       NEEDDIST=0
     fi
     # Build platform-dependent executables from source archive
@@ -83,7 +83,7 @@ script: |
     make $MAKEOPTS
     make deploy
     make install-strip
-    cp -f VERGE-*setup*.exe $BINDIR/
+    cp -f Nanite-*setup*.exe $BINDIR/
     unset LD_PRELOAD
     unset FAKETIME
   done # for BITS in

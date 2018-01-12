@@ -10559,7 +10559,7 @@ Changes in version 0.2.5.2-alpha - 2014-02-13
       to begin building circuits?" logic most recently in 0.2.4.10-alpha
       (see bug 5956), but we left the bootstrap status event logic at
       "how far through getting 1/4 of them are we?" Fixes bug 9958;
-      bugfix on 0.2.2.36, which is where they diverged (see bug 5343).
+      bugfix on 0.2.2.36, which is where they dinanited (see bug 5343).
 
   o Minor bugfixes (new since 0.2.5.1-alpha, also in 0.2.4.20):
     - Avoid a crash bug when starting with a corrupted microdescriptor
@@ -21128,7 +21128,7 @@ Changes in version 0.2.0.9-alpha - 2007-10-24
       its address in the vote. This fixes the problem where we referred to
       "moria on moria:9031."
     - Distinguish between detached signatures for the wrong period, and
-      detached signatures for a divergent vote.
+      detached signatures for a dinanitent vote.
     - Fix a small memory leak when computing a consensus.
     - When there's no concensus, we were forming a vote every 30
       minutes, but writing the "valid-after" line in our vote based

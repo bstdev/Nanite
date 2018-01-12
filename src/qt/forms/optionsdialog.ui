@@ -110,10 +110,10 @@ max-width: 100px;</string>
        <item>
         <widget class="QCheckBox" name="bitcoinAtStartup">
          <property name="toolTip">
-          <string>Automatically start VERGE after logging in to the system.</string>
+          <string>Automatically start Nanite after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start VERGE on system login</string>
+          <string>&amp;Start Nanite on system login</string>
          </property>
         </widget>
        </item>
@@ -127,7 +127,7 @@ max-width: 100px;</string>
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the VERGE client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the Nanite client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -137,7 +137,7 @@ max-width: 100px;</string>
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the VERGE network through a SOCKS proxy (e.g. when connecting through Tor).</string>
+          <string>Connect to the Nanite network through a SOCKS proxy (e.g. when connecting through Tor).</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS proxy:</string>
@@ -345,7 +345,7 @@ max-width: 80px;</string>
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting VERGE.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting Nanite.</string>
            </property>
            <property name="styleSheet">
             <string notr="true">
@@ -402,7 +402,7 @@ max-width: 100px;</string>
        <item>
         <widget class="QCheckBox" name="displayAddresses">
          <property name="toolTip">
-          <string>Whether to show VERGE addresses in the transaction list or not.</string>
+          <string>Whether to show Nanite addresses in the transaction list or not.</string>
          </property>
          <property name="text">
           <string>&amp;Display addresses in transaction list</string>

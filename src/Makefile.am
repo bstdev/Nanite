@@ -47,7 +47,7 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += VERGEd
+  bin_PROGRAMS += Nanited
 endif
 
 .PHONY: FORCE
@@ -231,7 +231,7 @@ endif
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 
 # bitcoind binary #
-VERGEd_LDADD = \
+Nanited_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -241,16 +241,16 @@ VERGEd_LDADD = \
 if HAVE_SSE2
 libbitcoin_sse2_a_SOURCES = scrypt-sse2.cpp
 libbitcoin_sse2_a_CPPFLAGS = $(BITCOIN_INCLUDES) -msse2 -mstackrealign
-VERGEd_LDADD += libbitcoin_sse2.a
+Nanited_LDADD += libbitcoin_sse2.a
 endif
 
 if ENABLE_WALLET
-VERGEd_LDADD += libbitcoin_wallet.a
+Nanited_LDADD += libbitcoin_wallet.a
 endif
-VERGEd_SOURCES = daemon.cpp
+Nanited_SOURCES = daemon.cpp
 
-VERGEd_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
-VERGEd_CPPFLAGS = $(BITCOIN_INCLUDES)
+Nanited_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
+Nanited_CPPFLAGS = $(BITCOIN_INCLUDES)
 
 CLEANFILES = leveldb/libleveldb.a leveldb/libmemenv.a *.gcda *.gcno
 

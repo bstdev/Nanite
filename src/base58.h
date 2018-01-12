@@ -277,7 +277,7 @@ class CBitcoinAddress : public CBase58Data
 public:
     enum
     {
-        PUBKEY_ADDRESS = 30,  // VERGE: address begin with 'f'
+        PUBKEY_ADDRESS = 30,  // Nanite: address begin with 'f'
         SCRIPT_ADDRESS = 33, 
         PUBKEY_ADDRESS_TEST = 115,
         SCRIPT_ADDRESS_TEST = 198,

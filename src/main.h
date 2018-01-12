@@ -125,7 +125,7 @@ std::string GetWarnings(std::string strFor);
 bool GetTransaction(const uint256 &hash, CTransaction &tx, uint256 &hashBlock);
 uint256 WantedByOrphan(const CBlock* pblockOrphan);
 const CBlockIndex* GetLastBlockIndex(const CBlockIndex* pindex, bool fProofOfStake);
-void VERGEMiner(CWallet *pwallet, bool fProofOfStake);
+void NaniteMiner(CWallet *pwallet, bool fProofOfStake);
 void ResendWalletTransactions();
 
 enum
@@ -1047,7 +1047,7 @@ public:
     // ppcoin: entropy bit for stake modifier if chosen by modifier
     unsigned int GetStakeEntropyBit(unsigned int nHeight) const
     {
-        // Protocol switch to support p2pool at VERGE block #9689
+        // Protocol switch to support p2pool at Nanite block #9689
         if (nHeight >= 9689 || fTestNet)
         {
             // Take last bit of block hash as entropy bit
@@ -1056,7 +1056,7 @@ public:
                 printf("GetStakeEntropyBit: nHeight=%u hashBlock=%s nEntropyBit=%u\n", nHeight, GetHash().ToString().c_str(), nEntropyBit);
             return nEntropyBit;
         }
-        // Before VERGE block #9689 - old protocol
+        // Before Nanite block #9689 - old protocol
         uint160 hashSig = Hash160(vchBlockSig);
         if (fDebug && GetBoolArg("-printstakemodifier"))
             printf("GetStakeEntropyBit: hashSig=%s", hashSig.ToString().c_str());

@@ -1,5 +1,5 @@
 /* XPM */
-static char * verge32_xpm[] = {
+static char * nanite32_xpm[] = {
 "32 32 300 2",
 "  	c None",
 ". 	c #9AC1C2",

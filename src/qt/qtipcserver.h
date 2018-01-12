@@ -1,8 +1,8 @@
 #ifndef QTIPCSERVER_H
 #define QTIPCSERVER_H
 
-// Define VERGE-Qt message queue name
-#define VERGEURI_QUEUE_NAME "VERGEURI"
+// Define Nanite-Qt message queue name
+#define NaniteURI_QUEUE_NAME "NaniteURI"
 
 void ipcScanRelay(int argc, char *argv[]);
 void ipcInit(int argc, char *argv[]);

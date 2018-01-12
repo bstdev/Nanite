@@ -17,7 +17,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>About VERGE</string>
+   <string>About Nanite</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
@@ -56,7 +56,7 @@
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
-          <string>&lt;b&gt;VERGE&lt;/b&gt; version</string>
+          <string>&lt;b&gt;Nanite&lt;/b&gt; version</string>
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -97,7 +97,7 @@
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="text">
-        <string>Copyright © 2018 Verge</string>
+        <string>Copyright © 2018 Nanite</string>
        </property>
        <property name="textInteractionFlags">
         <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -117,9 +117,9 @@ Distributed under the MIT/X11 software license, see the accompanying file COPYIN
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.
 
-Offical Website: http://VERGEcurrency.com
+Offical Website: http://Nanitecurrency.com
 
-Special Thanks to: sunerok, michpiatek, ekryski, cryptorekt, MKinney, BearSylla, Hypermist, Pallas1, BuZz, glodfinch, InfernoMan, AhmedBodi, BitSpill, MentalCollatz, and the -entire- #VERGE community!
+Special Thanks to: sunerok, michpiatek, ekryski, cryptorekt, MKinney, BearSylla, Hypermist, Pallas1, BuZz, glodfinch, InfernoMan, AhmedBodi, BitSpill, MentalCollatz, and the -entire- #Nanite community!
 
 HTP!</string>
        </property>

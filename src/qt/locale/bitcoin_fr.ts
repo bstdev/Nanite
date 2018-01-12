@@ -6,18 +6,18 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About VERGE</source>
-        <translation>A propos de VERGE</translation>
+        <source>About Nanite</source>
+        <translation>A propos de Nanite</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;VERGE&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;VERGE&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;Nanite&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Nanite&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+41"/>
-        <source>Copyright © 2014-2016 The Verge developers</source>
-        <translation>Copyright © 2014-2016 The Verge developers</translation>
+        <source>Copyright © 2014-2016 The Nanite developers</source>
+        <translation>Copyright © 2014-2016 The Nanite developers</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -64,8 +64,8 @@ Ce produit inclut des logiciel développés par OpenSSL Project pour utilisation
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your VERGE addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Voici vos adresses VERGE addresses pour recevoir des paiements. Vous pouvez en fournir une différente pour chaque émetteur, afin de suivre qui vous a payé.</translation>
+        <source>These are your Nanite addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Voici vos adresses Nanite addresses pour recevoir des paiements. Vous pouvez en fournir une différente pour chaque émetteur, afin de suivre qui vous a payé.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -79,8 +79,8 @@ Ce produit inclut des logiciel développés par OpenSSL Project pour utilisation
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a VERGE address</source>
-        <translation>Signer un message pour prouver que vous avez une adresse VERGE</translation>
+        <source>Sign a message to prove you own a Nanite address</source>
+        <translation>Signer un message pour prouver que vous avez une adresse Nanite</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -94,8 +94,8 @@ Ce produit inclut des logiciel développés par OpenSSL Project pour utilisation
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified VERGE address</source>
-        <translation>Vérifier un message pour s&apos;assurer qu&apos;il a été signé avec une adresse VERGE spécifiée</translation>
+        <source>Verify a message to ensure it was signed with a specified Nanite address</source>
+        <translation>Vérifier un message pour s&apos;assurer qu&apos;il a été signé avec une adresse Nanite spécifiée</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -252,8 +252,8 @@ Ce produit inclut des logiciel développés par OpenSSL Project pour utilisation
     </message>
     <message>
         <location line="-56"/>
-        <source>VERGE will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>VERGE va bientôt finir le processus d&apos;encryption. Rappelez-vous qu&apos;encrypter votre waller ne peut pas protéger totalement contre le vol par malwares pouvant infecter votre ordinateur.</translation>
+        <source>Nanite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Nanite va bientôt finir le processus d&apos;encryption. Rappelez-vous qu&apos;encrypter votre waller ne peut pas protéger totalement contre le vol par malwares pouvant infecter votre ordinateur.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -366,8 +366,8 @@ Ce produit inclut des logiciel développés par OpenSSL Project pour utilisation
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about VERGE</source>
-        <translation>Montrer les informations à propos de VERGE</translation>
+        <source>Show information about Nanite</source>
+        <translation>Montrer les informations à propos de Nanite</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ Ce produit inclut des logiciel développés par OpenSSL Project pour utilisation
     </message>
     <message>
         <location line="-58"/>
-        <source>Send coins to a VERGE address</source>
-        <translation>Envoyer des coins à une adresse VERGE</translation>
+        <source>Send coins to a Nanite address</source>
+        <translation>Envoyer des coins à une adresse Nanite</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for VERGE</source>
-        <translation>Modifier les options de configuration de VERGE</translation>
+        <source>Modify configuration options for Nanite</source>
+        <translation>Modifier les options de configuration de Nanite</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -464,8 +464,8 @@ Ce produit inclut des logiciel développés par OpenSSL Project pour utilisation
     </message>
     <message>
         <location line="-186"/>
-        <source>VERGE</source>
-        <translation>VERGE</translation>
+        <source>Nanite</source>
+        <translation>Nanite</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -474,8 +474,8 @@ Ce produit inclut des logiciel développés par OpenSSL Project pour utilisation
     </message>
     <message>
         <location line="+168"/>
-        <source>&amp;About VERGE</source>
-        <translation>&amp;A propos de VERGE</translation>
+        <source>&amp;About Nanite</source>
+        <translation>&amp;A propos de Nanite</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -516,15 +516,15 @@ Ce produit inclut des logiciel développés par OpenSSL Project pour utilisation
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>VERGE client</source>
-        <translation>client VERGE</translation>
+        <source>Nanite client</source>
+        <translation>client Nanite</translation>
     </message>
     <message numerus="yes">
         <location line="+69"/>
-        <source>%n active connection(s) to VERGE network</source>
+        <source>%n active connection(s) to Nanite network</source>
         <translation>
-            <numerusform>%n connexions active au réseau VERGE</numerusform>
-            <numerusform>%n connexions actives au réseau VERGE</numerusform>
+            <numerusform>%n connexions active au réseau Nanite</numerusform>
+            <numerusform>%n connexions actives au réseau Nanite</numerusform>
         </translation>
     </message>
     <message>
@@ -621,8 +621,8 @@ Addresse: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid VERGE address or malformed URI parameters.</source>
-        <translation>URI ne peut pas être analysée! Celà peut être dû à une adresse VERGE invalide ou des paramêtres URI malformés.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Nanite address or malformed URI parameters.</source>
+        <translation>URI ne peut pas être analysée! Celà peut être dû à une adresse Nanite invalide ou des paramêtres URI malformés.</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -656,8 +656,8 @@ Addresse: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. VERGE can no longer continue safely and will quit.</source>
-        <translation>Erreur fatale. VERGE ne peut plus continuer à être exécuté et va s&apos;arrêter.</translation>
+        <source>A fatal error occurred. Nanite can no longer continue safely and will quit.</source>
+        <translation>Erreur fatale. Nanite ne peut plus continuer à être exécuté et va s&apos;arrêter.</translation>
     </message>
 </context>
 <context>
@@ -722,8 +722,8 @@ Addresse: %4
     </message>
     <message>
         <location line="+5"/>
-        <source>The entered address &quot;%1&quot; is not a valid VERGE address.</source>
-        <translation>L&apos;adresse entrée &quot;%1&quot; n&apos;est pas une adresse VERGE valide.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Nanite address.</source>
+        <translation>L&apos;adresse entrée &quot;%1&quot; n&apos;est pas une adresse Nanite valide.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -741,8 +741,8 @@ Addresse: %4
     <message>
         <location filename="../guiutil.cpp" line="+419"/>
         <location line="+12"/>
-        <source>VERGE-Qt</source>
-        <translation>VERGE-Qt</translation>
+        <source>Nanite-Qt</source>
+        <translation>Nanite-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -804,13 +804,13 @@ Addresse: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start VERGE after logging in to the system.</source>
-        <translation>Démarrer automatiquementVERGE après l&apos;authentification sur le système.</translation>
+        <source>Automatically start Nanite after logging in to the system.</source>
+        <translation>Démarrer automatiquementNanite après l&apos;authentification sur le système.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start VERGE on system login</source>
-        <translation>&amp;Démarrer VERGE lors de l&apos;authentification sur le système</translation>
+        <source>&amp;Start Nanite on system login</source>
+        <translation>&amp;Démarrer Nanite lors de l&apos;authentification sur le système</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -829,8 +829,8 @@ Addresse: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the VERGE client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Ouvrir automatiquement le port du client VERGE sur le routeur. Celà ne marche que si votre routeur supporte UPnP et qu&apos;il est activé.</translation>
+        <source>Automatically open the Nanite client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Ouvrir automatiquement le port du client Nanite sur le routeur. Celà ne marche que si votre routeur supporte UPnP et qu&apos;il est activé.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -839,8 +839,8 @@ Addresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the VERGE network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Se connecter au réseau VERGE à travers un proxy SOCKS (ex: lors d&apos;une connexion via TOR).</translation>
+        <source>Connect to the Nanite network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Se connecter au réseau Nanite à travers un proxy SOCKS (ex: lors d&apos;une connexion via TOR).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -914,8 +914,8 @@ Addresse: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting VERGE.</source>
-        <translation>La langue de l&apos;interface utilisateur peut ête définie ici. Ce paramêtre sera pris en compte après un redémarrage de VERGE.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Nanite.</source>
+        <translation>La langue de l&apos;interface utilisateur peut ête définie ici. Ce paramêtre sera pris en compte après un redémarrage de Nanite.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -929,8 +929,8 @@ Addresse: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show VERGE addresses in the transaction list or not.</source>
-        <translation>Montrer ou non les adresses VERGE dans la liste de transactions.</translation>
+        <source>Whether to show Nanite addresses in the transaction list or not.</source>
+        <translation>Montrer ou non les adresses Nanite dans la liste de transactions.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -966,8 +966,8 @@ Addresse: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting VERGE.</source>
-        <translation>ce paramètre sera pris en compte après redémarrage de VERGE.</translation>
+        <source>This setting will take effect after restarting Nanite.</source>
+        <translation>ce paramètre sera pris en compte après redémarrage de Nanite.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -985,8 +985,8 @@ Addresse: %4
     <message>
         <location line="+33"/>
         <location line="+183"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the VERGE network after a connection is established, but this process has not completed yet.</source>
-        <translation>L&apos;information affichée peut être périmée. Votre portefeuille se synchronise automatiquement avec le réseau VERGE dès qu&apos;une connexion est établie, mais ce processus n&apos;a pas encore abouti.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Nanite network after a connection is established, but this process has not completed yet.</source>
+        <translation>L&apos;information affichée peut être périmée. Votre portefeuille se synchronise automatiquement avec le réseau Nanite dès qu&apos;une connexion est établie, mais ce processus n&apos;a pas encore abouti.</translation>
     </message>
     <message>
         <location line="-141"/>
@@ -1201,8 +1201,8 @@ Addresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the VERGE-Qt help message to get a list with possible VERGE command-line options.</source>
-        <translation>Montrer les messages d&apos;aide VERGE-Qt pour avoir une liste des options de ligne de commande VERGE possibles.</translation>
+        <source>Show the Nanite-Qt help message to get a list with possible Nanite command-line options.</source>
+        <translation>Montrer les messages d&apos;aide Nanite-Qt pour avoir une liste des options de ligne de commande Nanite possibles.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1221,13 +1221,13 @@ Addresse: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>VERGE - Debug window</source>
-        <translation>VERGE - Fenêtre de Debug</translation>
+        <source>Nanite - Debug window</source>
+        <translation>Nanite - Fenêtre de Debug</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>VERGE Core</source>
-        <translation>VERGE Core</translation>
+        <source>Nanite Core</source>
+        <translation>Nanite Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1236,8 +1236,8 @@ Addresse: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the VERGE debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Ouvrir le fichier log de debug VERGE depuis le répertoire courant des données. Celà peut prendre quelques secondes pour les gros fichiers de logs.</translation>
+        <source>Open the Nanite debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Ouvrir le fichier log de debug Nanite depuis le répertoire courant des données. Celà peut prendre quelques secondes pour les gros fichiers de logs.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1246,8 +1246,8 @@ Addresse: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the VERGE RPC console.</source>
-        <translation>Bienvenue dans la console RPC VERGE.</translation>
+        <source>Welcome to the Nanite RPC console.</source>
+        <translation>Bienvenue dans la console RPC Nanite.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1430,8 +1430,8 @@ Addresse: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a valid VERGE address</source>
-        <translation>Entrer une adresse VERGE valide </translation>
+        <source>Enter a valid Nanite address</source>
+        <translation>Entrer une adresse Nanite valide </translation>
     </message>
 </context>
 <context>
@@ -1491,8 +1491,8 @@ Addresse: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this VERGE address</source>
-        <translation>Signer le message pour prouver que vous possédez cette adresse VERGE</translation>
+        <source>Sign the message to prove you own this Nanite address</source>
+        <translation>Signer le message pour prouver que vous possédez cette adresse Nanite</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -1523,8 +1523,8 @@ Addresse: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified VERGE address</source>
-        <translation>Vérifier le message pour s&apos;assurer qu&apos;il a été signé avec l&apos;adresse VERGE spécifiée</translation>
+        <source>Verify the message to ensure it was signed with the specified Nanite address</source>
+        <translation>Vérifier le message pour s&apos;assurer qu&apos;il a été signé avec l&apos;adresse Nanite spécifiée</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -1534,8 +1534,8 @@ Addresse: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a valid VERGE address</source>
-        <translation>Entrer une adresse VERGE valide</translation>
+        <source>Enter a valid Nanite address</source>
+        <translation>Entrer une adresse Nanite valide</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1544,8 +1544,8 @@ Addresse: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter VERGE signature</source>
-        <translation>Entrer la signature VERGE</translation>
+        <source>Enter Nanite signature</source>
+        <translation>Entrer la signature Nanite</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2115,8 +2115,8 @@ Addresse: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+82"/>
-        <source>VERGE version</source>
-        <translation>Version VERGE</translation>
+        <source>Nanite version</source>
+        <translation>Version Nanite</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2145,13 +2145,13 @@ Addresse: %4
     </message>
     <message>
         <location line="+23"/>
-        <source>Specify configuration file (default: VERGE.conf)</source>
-        <translation>Spécifier le fichier de configuration (defaut: VERGE.conf)</translation>
+        <source>Specify configuration file (default: Nanite.conf)</source>
+        <translation>Spécifier le fichier de configuration (defaut: Nanite.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: VERGEd.pid)</source>
-        <translation>Specifier le fichier pid (defalt: VERGEd.pid)</translation>
+        <source>Specify pid file (default: Nanited.pid)</source>
+        <translation>Specifier le fichier pid (defalt: Nanited.pid)</translation>
     </message>
     <message>
         <location line="-47"/>
@@ -2305,8 +2305,8 @@ Addresse: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong VERGE will not work properly.</source>
-        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong VERGE will not work properly.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Nanite will not work properly.</source>
+        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Nanite will not work properly.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2540,13 +2540,13 @@ Addresse: %4
     </message>
     <message>
         <location line="-131"/>
-        <source>Cannot obtain a lock on data directory %s.  VERGE is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s.  VERGE is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s.  Nanite is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s.  Nanite is probably already running.</translation>
     </message>
     <message>
         <location line="+57"/>
-        <source>VERGE</source>
-        <translation>VERGE</translation>
+        <source>Nanite</source>
+        <translation>Nanite</translation>
     </message>
     <message>
         <location line="+77"/>
@@ -2580,13 +2580,13 @@ Addresse: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of VERGE</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of VERGE</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Nanite</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Nanite</translation>
     </message>
     <message>
         <location line="+73"/>
-        <source>Wallet needed to be rewritten: restart VERGE to complete</source>
-        <translation>Wallet needed to be rewritten: restart VERGE to complete</translation>
+        <source>Wallet needed to be rewritten: restart Nanite to complete</source>
+        <translation>Wallet needed to be rewritten: restart Nanite to complete</translation>
     </message>
     <message>
         <location line="-75"/>
@@ -2655,8 +2655,8 @@ Addresse: %4
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. VERGE is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. VERGE is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. Nanite is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Nanite is probably already running.</translation>
     </message>
     <message>
         <location line="+55"/>

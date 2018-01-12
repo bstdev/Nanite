@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>VERGE - Debug window</string>
+   <string>Nanite - Debug window</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -36,7 +36,7 @@
           </font>
          </property>
          <property name="text">
-          <string>VERGE Core</string>
+          <string>Nanite Core</string>
          </property>
         </widget>
        </item>
@@ -322,7 +322,7 @@
        <item row="15" column="0">
         <widget class="QPushButton" name="openDebugLogfileButton">
          <property name="toolTip">
-          <string>Open the VERGE debug log file from the current data directory. This can take a few seconds for large log files.</string>
+          <string>Open the Nanite debug log file from the current data directory. This can take a few seconds for large log files.</string>
          </property>
          <property name="styleSheet">
           <string notr="true">border-top-left-radius: 5px;
@@ -357,7 +357,7 @@ max-height: 25px;</string>
        <item row="17" column="0">
         <widget class="QPushButton" name="showCLOptionsButton">
          <property name="toolTip">
-          <string>Show the VERGE-Qt help message to get a list with possible VERGE command-line options.</string>
+          <string>Show the Nanite-Qt help message to get a list with possible Nanite command-line options.</string>
          </property>
          <property name="text">
           <string>&amp;Show</string>

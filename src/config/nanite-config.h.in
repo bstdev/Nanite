@@ -1,8 +1,8 @@
-/* src/config/verge-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/nanite-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef VERGE_CONFIG_H
+#ifndef Nanite_CONFIG_H
 
-#define VERGE_CONFIG_H
+#define Nanite_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 #undef AC_APPLE_UNIVERSAL_BUILD
@@ -302,4 +302,4 @@
 /* Define for large files, on AIX-style hosts. */
 #undef _LARGE_FILES
 
-#endif //VERGE_CONFIG_H
+#endif //Nanite_CONFIG_H

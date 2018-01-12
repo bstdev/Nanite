@@ -1,4 +1,4 @@
-# VERGE [XVG] Developer Notes
+# Nanite [NTT] Developer Notes
 
 ## Debugging
 
@@ -26,7 +26,7 @@ Output extra debugging information. Implies all other -debug* options
 
 Display information about the node and the network
 ```
-./VERGEd getinfo
+./Nanited getinfo
 ```
 
 

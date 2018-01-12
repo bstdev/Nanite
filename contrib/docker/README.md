@@ -1,6 +1,6 @@
 Started from this:
-   https://github.com/vergecurrency/Docker-Verge-Daemon
+   https://github.com/nanitecurrency/Docker-Nanite-Daemon
 
 However, the official docker images can be found here:
-   https://hub.docker.com/r/vergecurrency/verge/
+   https://hub.docker.com/r/nanitecurrency/nanite/
 

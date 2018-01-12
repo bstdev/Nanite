@@ -1,6 +1,6 @@
-Verge 0.4.0
+Nanite 0.4.0
 
-Copyright (c) 2013 Verge Developers
+Copyright (c) 2013 Nanite Developers
 Copyright (c) 2011-2012 PPCoin Developers
 Copyright (c) 2009-2012 Bitcoin Developers
 
@@ -9,4 +9,4 @@ This product includes software developed by the OpenSSL Project for use in the O
 
 
 # Intro
-Verge is a free open source project with the goal of providing a long-term energy-efficient multi-algorithm crypto-currency. Built on the foundation of Bitcoin and PPCoin, innovations such as Stealth transactions and Tor support help further advance the field of crypto-currency.
+Nanite is a free open source project with the goal of providing a long-term energy-efficient multi-algorithm crypto-currency. Built on the foundation of Bitcoin and PPCoin, innovations such as Stealth transactions and Tor support help further advance the field of crypto-currency.

@@ -1,9 +1,9 @@
 #!/bin/bash
 
 usage () {
-	echo "USAGE: build-verge.sh [-v version] [-s SIGNER] [-d true/false]"
+	echo "USAGE: build-nanite.sh [-v version] [-s SIGNER] [-d true/false]"
 	echo "Where v(ersion) should be the next version of the wallet"
-	echo "Where s(igner) is used for the gitian signature, for example drakandar@VERGEcurrency.com - no signer will skip signatures"
+	echo "Where s(igner) is used for the gitian signature, for example drakandar@Nanitecurrency.com - no signer will skip signatures"
 	echo "Where d(ownload) is used to determine if you want to download third party libraries. Defaults to TRUE"
 	exit 1
 }
@@ -88,7 +88,7 @@ sudo chown -R $USER.$USER /data/coins
 cd /data/coins
 
 # Clone sources
-git clone git://github.com/VERGETeam/fair-coin.git verge
+git clone git://github.com/NaniteTeam/fair-coin.git nanite
 git clone git://github.com/devrandom/gitian-builder.git
 
 #Mk dirs for inputs and download them
@@ -116,25 +116,25 @@ bin/make-base-vm --suite precise --arch i386
 bin/make-base-vm --suite precise --arch amd64
 
 #Incremental build gitian descriptors
-bin/gbuild ../verge/contrib/gitian-descriptors/boost-linux.yml
+bin/gbuild ../nanite/contrib/gitian-descriptors/boost-linux.yml
 mv build/out/boost-*.zip inputs/
 
-bin/gbuild ../verge/contrib/gitian-descriptors/deps-linux.yml
-mv build/out/verge-deps-*.zip inputs/
+bin/gbuild ../nanite/contrib/gitian-descriptors/deps-linux.yml
+mv build/out/nanite-deps-*.zip inputs/
 
-bin/gbuild ../verge/contrib/gitian-descriptors/qt-linux.yml
+bin/gbuild ../nanite/contrib/gitian-descriptors/qt-linux.yml
 mv build/out/qt-*.tar.gz inputs/
 
-bin/gbuild ../verge/contrib/gitian-descriptors/boost-win.yml
+bin/gbuild ../nanite/contrib/gitian-descriptors/boost-win.yml
 mv build/out/boost-*.zip inputs/
 
-bin/gbuild ../verge/contrib/gitian-descriptors/deps-win.yml
-mv build/out/verge-deps-*.zip inputs/
+bin/gbuild ../nanite/contrib/gitian-descriptors/deps-win.yml
+mv build/out/nanite-deps-*.zip inputs/
 
-bin/gbuild ../verge/contrib/gitian-descriptors/qt-win.yml
+bin/gbuild ../nanite/contrib/gitian-descriptors/qt-win.yml
 mv build/out/qt-*.zip inputs/
 
-bin/gbuild ../verge/contrib/gitian-descriptors/protobuf-win.yml
+bin/gbuild ../nanite/contrib/gitian-descriptors/protobuf-win.yml
 mv build/out/protobuf-*.zip inputs/
 
 #Check if there is a signer, if not exit.
@@ -146,7 +146,7 @@ fi
 
 # Clone gitian signatures and append to them
 cd ..
-git clone https://github.com/VERGETeam/gitian.sigs.git
+git clone https://github.com/NaniteTeam/gitian.sigs.git
 
 cd gitian-builder
 bin/gbuild --commit fair-coin=v${VERSION} ../fair-coin/contrib/gitian-descriptors/gitian-linux.yml

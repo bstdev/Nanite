@@ -1,10 +1,10 @@
 version: '2.1'
 services:
-  container_verge:
-    image: my/container_verge
-    container_name: container_verge
+  container_nanite:
+    image: my/container_nanite
+    container_name: container_nanite
     ports:
       - "20102:20102"
       - "21102:21102"
     volumes:
-    - ./conf/VERGE.conf:/root/.VERGE/VERGE.conf
+    - ./conf/Nanite.conf:/root/.Nanite/Nanite.conf

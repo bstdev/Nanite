@@ -1,4 +1,4 @@
-// Copyright (c) 2016 Verge Developers
+// Copyright (c) 2016 Nanite Developers
 
 #ifndef PBKDF2_H
 #define PBKDF2_H

@@ -6,18 +6,18 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Verge</source>
-        <translation>О Verge</translation>
+        <source>About Nanite</source>
+        <translation>О Nanite</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Verge&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Verge&lt;/b&gt; версия</translation>
+        <source>&lt;b&gt;Nanite&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Nanite&lt;/b&gt; версия</translation>
     </message>
     <message>
         <location line="+41"/>
-        <source>Copyright © 2014-2018 The Verge developers</source>
-        <translation>Все права защищены © 2014-2018 Разработчики Verge</translation>
+        <source>Copyright © 2014-2018 The Nanite developers</source>
+        <translation>Все права защищены © 2014-2018 Разработчики Nanite</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -64,7 +64,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your Verge addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your Nanite addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Это Ваши адреса для получения платежей. Вы можете дать разные адреса отправителям, чтобы отслеживать, кто именно вам платит.</translation>
     </message>
     <message>
@@ -79,8 +79,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Verge address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом Verge</translation>
+        <source>Sign a message to prove you own a Nanite address</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом Nanite</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -94,8 +94,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified Verge address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом Verge</translation>
+        <source>Verify a message to ensure it was signed with a specified Nanite address</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом Nanite</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -252,7 +252,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Verge will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>Nanite will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши монеты от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
@@ -366,8 +366,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Verge</source>
-        <translation>Показать информацию о Verge&apos;е</translation>
+        <source>Show information about Nanite</source>
+        <translation>Показать информацию о Nanite&apos;е</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -420,13 +420,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-58"/>
-        <source>Send coins to a Verge address</source>
-        <translation>Отправить монеты на указанный адрес Verge</translation>
+        <source>Send coins to a Nanite address</source>
+        <translation>Отправить монеты на указанный адрес Nanite</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for Verge</source>
-        <translation>Изменить параметры конфигурации Verge</translation>
+        <source>Modify configuration options for Nanite</source>
+        <translation>Изменить параметры конфигурации Nanite</translation>
     </message>
     <message>
         <location line="+14"/>
@@ -465,8 +465,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-186"/>
-        <source>Verge</source>
-        <translation>Verge</translation>
+        <source>Nanite</source>
+        <translation>Nanite</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -475,8 +475,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+168"/>
-        <source>&amp;About Verge</source>
-        <translation>&amp;О Verge</translation>
+        <source>&amp;About Nanite</source>
+        <translation>&amp;О Nanite</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -517,12 +517,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>Verge client</source>
-        <translation>Verge клиент</translation>
+        <source>Nanite client</source>
+        <translation>Nanite клиент</translation>
     </message>
     <message numerus="yes">
         <location line="+69"/>
-        <source>%n active connection(s) to Verge network</source>
+        <source>%n active connection(s) to Nanite network</source>
         <translation>
             <numerusform>%n активное соединение с сетью</numerusform>
             <numerusform>%n активных соединений с сетью</numerusform>
@@ -627,8 +627,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid Verge address or malformed URI parameters.</source>
-        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом Verge или неправильными параметрами URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Nanite address or malformed URI parameters.</source>
+        <translation>Не удалось обработать URI! Это может быть связано с неверным адресом Nanite или неправильными параметрами URI.</translation>
     </message>
     <message>
         <location line="+16"/>
@@ -662,8 +662,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. Verge can no longer continue safely and will quit.</source>
-        <translation>Произошла неисправимая ошибка. Verge не может безопасно продолжать работу и будет закрыт.</translation>
+        <source>A fatal error occurred. Nanite can no longer continue safely and will quit.</source>
+        <translation>Произошла неисправимая ошибка. Nanite не может безопасно продолжать работу и будет закрыт.</translation>
     </message>
 </context>
 <context>
@@ -728,8 +728,8 @@ Address: %4
     </message>
     <message>
         <location line="+5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Verge address.</source>
-        <translation>Введённый адрес &quot;%1&quot; не является правильным Verge-адресом.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Nanite address.</source>
+        <translation>Введённый адрес &quot;%1&quot; не является правильным Nanite-адресом.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -747,8 +747,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+419"/>
         <location line="+12"/>
-        <source>Verge-Qt</source>
-        <translation>Verge-Qt</translation>
+        <source>Nanite-Qt</source>
+        <translation>Nanite-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -810,13 +810,13 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Verge after logging in to the system.</source>
-        <translation>Автоматически запускать Verge после входа в систему</translation>
+        <source>Automatically start Nanite after logging in to the system.</source>
+        <translation>Автоматически запускать Nanite после входа в систему</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Verge on system login</source>
-        <translation>&amp;Запускать Verge при входе в систему</translation>
+        <source>&amp;Start Nanite on system login</source>
+        <translation>&amp;Запускать Nanite при входе в систему</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -835,8 +835,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Verge client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматически открыть порт для Verge-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
+        <source>Automatically open the Nanite client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматически открыть порт для Nanite-клиента на роутере. Работает только если Ваш роутер поддерживает UPnP, и данная функция включена.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -845,8 +845,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Verge network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Подключаться к сети Verge через прокси SOCKS (например, при подключении через Tor).</translation>
+        <source>Connect to the Nanite network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Подключаться к сети Nanite через прокси SOCKS (например, при подключении через Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -920,8 +920,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Verge.</source>
-        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска Verge.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Nanite.</source>
+        <translation>Здесь можно выбрать язык интерфейса. Настройки вступят в силу после перезапуска Nanite.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -935,8 +935,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Verge addresses in the transaction list or not.</source>
-        <translation>Показывать ли адреса Verge в списке транзакций.</translation>
+        <source>Whether to show Nanite addresses in the transaction list or not.</source>
+        <translation>Показывать ли адреса Nanite в списке транзакций.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -972,8 +972,8 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Verge.</source>
-        <translation>Эта настройка вступит в силу после перезапуска Verge</translation>
+        <source>This setting will take effect after restarting Nanite.</source>
+        <translation>Эта настройка вступит в силу после перезапуска Nanite</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -991,8 +991,8 @@ Address: %4
     <message>
         <location line="+33"/>
         <location line="+183"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Verge network after a connection is established, but this process has not completed yet.</source>
-        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью Verge после подключения, но этот процесс пока не завершён.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Nanite network after a connection is established, but this process has not completed yet.</source>
+        <translation>Отображаемая информация может быть устаревшей. Ваш бумажник автоматически синхронизируется с сетью Nanite после подключения, но этот процесс пока не завершён.</translation>
     </message>
     <message>
         <location line="-141"/>
@@ -1207,8 +1207,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Verge-Qt help message to get a list with possible Verge command-line options.</source>
-        <translation>Показать помощь по Verge-Qt, чтобы получить список доступных параметров командной строки.</translation>
+        <source>Show the Nanite-Qt help message to get a list with possible Nanite command-line options.</source>
+        <translation>Показать помощь по Nanite-Qt, чтобы получить список доступных параметров командной строки.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1227,13 +1227,13 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Verge - Debug window</source>
-        <translation>Verge - Окно отладки</translation>
+        <source>Nanite - Debug window</source>
+        <translation>Nanite - Окно отладки</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Verge Core</source>
-        <translation>Ядро Verge</translation>
+        <source>Nanite Core</source>
+        <translation>Ядро Nanite</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1242,8 +1242,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Verge debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Открыть отладочный лог-файл Verge из текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
+        <source>Open the Nanite debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Открыть отладочный лог-файл Nanite из текущего каталога данных. Это может занять несколько секунд для больших лог-файлов.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1252,8 +1252,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the Verge RPC console.</source>
-        <translation>Добро пожаловать в RPC-консоль Verge.</translation>
+        <source>Welcome to the Nanite RPC console.</source>
+        <translation>Добро пожаловать в RPC-консоль Nanite.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1436,8 +1436,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Verge address (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</source>
-        <translation>Введите Verge-адрес (например 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</translation>
+        <source>Enter a Nanite address (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</source>
+        <translation>Введите Nanite-адрес (например 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</translation>
     </message>
 </context>
 <context>
@@ -1497,8 +1497,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Verge address</source>
-        <translation>Подписать сообщение, чтобы доказать владение адресом Verge</translation>
+        <source>Sign the message to prove you own this Nanite address</source>
+        <translation>Подписать сообщение, чтобы доказать владение адресом Nanite</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -1529,8 +1529,8 @@ Address: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Verge address</source>
-        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом Verge</translation>
+        <source>Verify the message to ensure it was signed with the specified Nanite address</source>
+        <translation>Проверить сообщение, чтобы убедиться, что оно было подписано указанным адресом Nanite</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -1540,8 +1540,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Verge address (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</source>
-        <translation>Введите адрес Verge (напр. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</translation>
+        <source>Enter a Nanite address (e.g. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</source>
+        <translation>Введите адрес Nanite (напр. 4Zo1ga6xuKuQ7JV7M9rGDoxdbYwV5zgQJ5)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1550,8 +1550,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Verge signature</source>
-        <translation>Введите подпись Verge</translation>
+        <source>Enter Nanite signature</source>
+        <translation>Введите подпись Nanite</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2126,7 +2126,7 @@ Address: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+82"/>
-        <source>Verge version</source>
+        <source>Nanite version</source>
         <translation>Версия</translation>
     </message>
     <message>
@@ -2157,13 +2157,13 @@ Address: %4
     </message>
     <message>
         <location line="+23"/>
-        <source>Specify configuration file (default: Verge.conf)</source>
-        <translation>Указать конфигурационный файл (по умолчанию: Verge.conf)</translation>
+        <source>Specify configuration file (default: Nanite.conf)</source>
+        <translation>Указать конфигурационный файл (по умолчанию: Nanite.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: Verged.pid)</source>
-        <translation>Указать pid-файл (по умолчанию: Verge.pid)</translation>
+        <source>Specify pid file (default: Nanited.pid)</source>
+        <translation>Указать pid-файл (по умолчанию: Nanite.pid)</translation>
     </message>
     <message>
         <location line="-47"/>
@@ -2322,8 +2322,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Verge will not work properly.</source>
-        <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, Verge будет работать некорректно.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Nanite will not work properly.</source>
+        <translation>Внимание: убедитесь, что дата и время на Вашем компьютере выставлены верно. Если Ваши часы идут неправильно, Nanite будет работать некорректно.</translation>
     </message>
     <message>
         <location line="+24"/>
@@ -2553,13 +2553,13 @@ Address: %4
     </message>
     <message>
         <location line="-131"/>
-        <source>Cannot obtain a lock on data directory %s.  Verge is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  Nanite is probably already running.</source>
         <translation>Невозможно установить блокировку на рабочую директорию %s.  Возможно, бумажник уже запущен.</translation>
     </message>
     <message>
         <location line="+57"/>
-        <source>Verge</source>
-        <translation>Verge</translation>
+        <source>Nanite</source>
+        <translation>Nanite</translation>
     </message>
     <message>
         <location line="+77"/>
@@ -2593,13 +2593,13 @@ Address: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Verge</source>
-        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию Verge</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Nanite</source>
+        <translation>Ошибка загрузки wallet.dat: бумажник требует более новую версию Nanite</translation>
     </message>
     <message>
         <location line="+73"/>
-        <source>Wallet needed to be rewritten: restart Verge to complete</source>
-        <translation>Необходимо перезаписать бумажник, перезапустите Verge для завершения операции.</translation>
+        <source>Wallet needed to be rewritten: restart Nanite to complete</source>
+        <translation>Необходимо перезаписать бумажник, перезапустите Nanite для завершения операции.</translation>
     </message>
     <message>
         <location line="-75"/>
@@ -2668,8 +2668,8 @@ Address: %4
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Verge is probably already running.</source>
-        <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, Verge уже работает.</translation>
+        <source>Unable to bind to %s on this computer. Nanite is probably already running.</source>
+        <translation>Невозможно привязаться к %s на этом компьютере.  Возможно, Nanite уже работает.</translation>
     </message>
     <message>
         <location line="+55"/>

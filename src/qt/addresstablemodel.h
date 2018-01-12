@@ -20,7 +20,7 @@ public:
 
     enum EAddressType {
         AT_Unknown = 0, /**< User specified label */
-        AT_Normal = 1,  /**< Verge Public address */
+        AT_Normal = 1,  /**< Nanite Public address */
         AT_Stealth = 2,  /**< Stealth address */
         AT_BIP32 = 3, /**< BIP32 address */
         AT_Group = 4, /**< BIP32 address */
@@ -28,8 +28,8 @@ public:
 
     enum ColumnIndex {
         Label = 0,   /**< User specified label */
-        Address = 1,  /**< Verge Public address */
-		Type = 2, /** < Verge Stealth Address */
+        Address = 1,  /**< Nanite Public address */
+		Type = 2, /** < Nanite Stealth Address */
     };
 
     enum RoleIndex {

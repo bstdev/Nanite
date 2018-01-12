@@ -71,7 +71,7 @@ map<uint256, map<uint256, CDataStream*> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "VERGE Signed Message:\n";
+const string strMessageMagic = "Nanite Signed Message:\n";
 
 double dHashesPerSec;
 int64 nHPSTimerStart;
@@ -1709,8 +1709,8 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
     // Now that the whole chain is irreversibly beyond that time it is applied to all blocks except the
     // two in the chain that violate it. This prevents exploiting the issue against nodes in their
     // initial block download.
-    bool fEnforceBIP30 = true; // Always active in VERGE
-    bool fStrictPayToScriptHash = true; // Always active in VERGE
+    bool fEnforceBIP30 = true; // Always active in Nanite
+    bool fStrictPayToScriptHash = true; // Always active in Nanite
 
     //// issue here: it doesn't know the version
     unsigned int nTxPos;
@@ -2764,7 +2764,7 @@ bool CheckDiskSpace(uint64 nAdditionalBytes)
         string strMessage = _("Warning: Disk space is low!");
         strMiscWarning = strMessage;
         printf("*** %s\n", strMessage.c_str());
-        uiInterface.ThreadSafeMessageBox(strMessage, "VERGE", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+        uiInterface.ThreadSafeMessageBox(strMessage, "Nanite", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         StartShutdown();
         return false;
     }
@@ -2862,7 +2862,7 @@ bool LoadBlockIndex(bool fAllowNew)
         // Genesis block
         const char* pszTimestamp = "Name: Dogecoin Dark";
 				if(fTestNet)
-					pszTimestamp = "VERGE TESTNET";
+					pszTimestamp = "Nanite TESTNET";
         CTransaction txNew;
         txNew.nTime = nChainStartTime;
 				if(fTestNet)
@@ -4252,7 +4252,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// VERGEMiner
+// NaniteMiner
 //
 
 int static FormatHashBlocks(void* pbuffer, unsigned int len)
@@ -4723,12 +4723,12 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
 
     if (hashPoW > hashTarget && pblock->IsProofOfWork())
-        return error("VERGEMiner : proof-of-work not meeting target");
+        return error("NaniteMiner : proof-of-work not meeting target");
 
     uint256 hashBlock = pblock->GetHash();
 
     //// debug print
-    printf("VERGEMiner:\n");
+    printf("NaniteMiner:\n");
     printf("new block found  \n  hash: %s  \n mHash: %s  \ntarget: %s\n",
             hashBlock.GetHex().c_str(),
             hashPoW.GetHex().c_str(),
@@ -4740,7 +4740,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != hashBestChain)
-            return error("VERGEMiner : generated block is stale");
+            return error("NaniteMiner : generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -4753,25 +4753,25 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 
         // Process this block the same as if we had received it from another node
         if (!ProcessBlock(NULL, pblock))
-            return error("VERGEMiner : ProcessBlock, block not accepted");
+            return error("NaniteMiner : ProcessBlock, block not accepted");
     }
 
     return true;
 }
 
-void static ThreadVERGEMiner(void* parg);
+void static ThreadNaniteMiner(void* parg);
 
 static bool fGenerateBitcoins = false;
 static bool fLimitProcessors = false;
 static int nLimitProcessors = -1;
 
-void VERGEMiner(CWallet *pwallet, bool fProofOfStake)
+void NaniteMiner(CWallet *pwallet, bool fProofOfStake)
 {
     printf("CPUMiner started for proof-of-%s\n", fProofOfStake? "stake" : "work");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
 
     // Make this thread recognisable as the mining thread
-    RenameThread("verge-miner");
+    RenameThread("nanite-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -4830,7 +4830,7 @@ void VERGEMiner(CWallet *pwallet, bool fProofOfStake)
             continue;
         }
 
-        printf("Running VERGEMiner with %" PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+        printf("Running NaniteMiner with %" PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -4937,26 +4937,26 @@ void VERGEMiner(CWallet *pwallet, bool fProofOfStake)
     }
 }
 
-void static ThreadVERGEMiner(void* parg)
+void static ThreadNaniteMiner(void* parg)
 {
     CWallet* pwallet = (CWallet*)parg;
     try
     {
         vnThreadsRunning[THREAD_MINER]++;
-        VERGEMiner(pwallet, false);
+        NaniteMiner(pwallet, false);
         vnThreadsRunning[THREAD_MINER]--;
     }
     catch (std::exception& e) {
         vnThreadsRunning[THREAD_MINER]--;
-        PrintException(&e, "ThreadVERGEMiner()");
+        PrintException(&e, "ThreadNaniteMiner()");
     } catch (...) {
         vnThreadsRunning[THREAD_MINER]--;
-        PrintException(NULL, "ThreadVERGEMiner()");
+        PrintException(NULL, "ThreadNaniteMiner()");
     }
     nHPSTimerStart = 0;
     if (vnThreadsRunning[THREAD_MINER] == 0)
         dHashesPerSec = 0;
-    printf("ThreadVERGEMiner exiting, %d threads remaining\n", vnThreadsRunning[THREAD_MINER]);
+    printf("ThreadNaniteMiner exiting, %d threads remaining\n", vnThreadsRunning[THREAD_MINER]);
 }
 
 
@@ -4977,11 +4977,11 @@ void GenerateBitcoins(bool fGenerate, CWallet* pwallet)
         if (fLimitProcessors && nProcessors > nLimitProcessors)
             nProcessors = nLimitProcessors;
         int nAddThreads = nProcessors - vnThreadsRunning[THREAD_MINER];
-        printf("Starting %d VERGEMiner threads\n", nAddThreads);
+        printf("Starting %d NaniteMiner threads\n", nAddThreads);
         for (int i = 0; i < nAddThreads; i++)
         {
-            if (!NewThread(ThreadVERGEMiner, pwallet))
-                printf("Error: NewThread(ThreadVERGEMiner) failed\n");
+            if (!NewThread(ThreadNaniteMiner, pwallet))
+                printf("Error: NewThread(ThreadNaniteMiner) failed\n");
             MilliSleep(10);
         }
     }

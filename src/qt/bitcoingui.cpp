@@ -80,7 +80,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 {
     setMinimumSize(970,500);
     resize(970, 500);
-    setWindowTitle(tr("VERGE") + " - " + tr("Wallet"));
+    setWindowTitle(tr("Nanite") + " - " + tr("Wallet"));
     qApp->setStyleSheet("QMainWindow { background-image:url(:images/bkg);border:none;font-family:'Open Sans,sans-serif'; } #frame { } QToolBar { text-align:center; } QToolBar QLabel { padding-top:15px;padding-bottom:10px;margin:0px; } #spacer { background:rgb(57,85,95);border:none; } #toolbar3 { border:none;width:1px; background-color: transparent; } #toolbar2 { border:none;width:5px; background-color:transparent; } #toolbar { border:none;height:100%;padding-top:20px; background: transparent; text-align: center; color: white;}  #labelMiningIcon { padding-left:5px;font-family:'Open Sans,sans-serif';font-size:10px;text-align:center;color:white; } QMenu { background: rgb(57,85,95); text-align: center; color:white; padding-bottom:10px; } QMenu::item { color:white; text-align: center; background-color: transparent; }  QMenuBar { background: rgb(57,85,95); color:white; } QMenuBar::item { font-size:12px;padding-bottom:8px;padding-top:5px;padding-left:5px;padding-right:5px;color:white; text-align: center; background-color: transparent; }");
 #ifndef Q_OS_MAC
     qApp->setWindowIcon(QIcon(":icons/bitcoin"));
@@ -212,7 +212,7 @@ void BitcoinGUI::createActions()
     tabGroup->addAction(overviewAction);
 
     sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send coins"), this);
-    sendCoinsAction->setToolTip(tr("Send coins to a VERGE address"));
+    sendCoinsAction->setToolTip(tr("Send coins to a Nanite address"));
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
     tabGroup->addAction(sendCoinsAction);
@@ -262,14 +262,14 @@ void BitcoinGUI::createActions()
     quitAction->setToolTip(tr("Quit application"));
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
-    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About VERGE"), this);
-    aboutAction->setToolTip(tr("Show information about VERGE"));
+    aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About Nanite"), this);
+    aboutAction->setToolTip(tr("Show information about Nanite"));
     aboutAction->setMenuRole(QAction::AboutRole);
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
     aboutQtAction->setToolTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
-    optionsAction->setToolTip(tr("Modify configuration options for VERGE"));
+    optionsAction->setToolTip(tr("Modify configuration options for Nanite"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
     toggleHideAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Show / Hide"), this);
     encryptWalletAction = new QAction(QIcon(":/icons/lock_closed"), tr("&Encrypt Wallet..."), this);
@@ -372,7 +372,7 @@ void BitcoinGUI::setClientModel(ClientModel *clientModel)
 #endif
             if(trayIcon)
             {
-                trayIcon->setToolTip(tr("VERGE client") + QString(" ") + tr("[testnet]"));
+                trayIcon->setToolTip(tr("Nanite client") + QString(" ") + tr("[testnet]"));
                 trayIcon->setIcon(QIcon(":/icons/toolbar_testnet"));
                 toggleHideAction->setIcon(QIcon(":/icons/toolbar_testnet"));
             }
@@ -433,7 +433,7 @@ void BitcoinGUI::createTrayIcon()
     trayIcon = new QSystemTrayIcon(this);
     trayIconMenu = new QMenu(this);
     trayIcon->setContextMenu(trayIconMenu);
-    trayIcon->setToolTip(tr("VERGE client"));
+    trayIcon->setToolTip(tr("Nanite client"));
     trayIcon->setIcon(QIcon(":/icons/toolbar"));
     connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
             this, SLOT(trayIconActivated(QSystemTrayIcon::ActivationReason)));
@@ -508,7 +508,7 @@ void BitcoinGUI::setNumConnections(int count)
     default: icon = ":/icons/connect_4"; break;
     }
     labelConnectionsIcon->setPixmap(QIcon(icon).pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to VERGE network", "", count));
+    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to Nanite network", "", count));
 }
 
 void BitcoinGUI::setNumBlocks(int count, int nTotalBlocks)
@@ -805,7 +805,7 @@ void BitcoinGUI::dropEvent(QDropEvent *event)
         if (nValidUrisFound)
             gotoSendCoinsPage();
         else
-            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid VERGE address or malformed URI parameters."));
+            notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Nanite address or malformed URI parameters."));
     }
 
     event->acceptProposedAction();
@@ -820,7 +820,7 @@ void BitcoinGUI::handleURI(QString strURI)
         gotoSendCoinsPage();
     }
     else
-        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid VERGE address or malformed URI parameters."));
+        notificator->notify(Notificator::Warning, tr("URI handling"), tr("URI can not be parsed! This can be caused by an invalid Nanite address or malformed URI parameters."));
 }
 
 void BitcoinGUI::setEncryptionStatus(int status)

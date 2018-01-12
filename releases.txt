@@ -17,7 +17,7 @@ To see tags: ('-n' shows comment, '-l' shows in order)
 - Mac OSX 10.8 Mountain Lion
 - Windows 7
 - Ubuntu 14.04
-  - For Ubuntu 14.04, you need to run these steps before you can run VERGE-qt:
+  - For Ubuntu 14.04, you need to run these steps before you can run Nanite-qt:
     sudo apt-get install -y libboost-filesystem-dev libboost-program-options-dev libboost-thread-dev libqrencode-dev
     sudo add-apt-repository ppa:bitcoin/bitcoin
     sudo apt-get update

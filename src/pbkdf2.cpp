@@ -1,4 +1,4 @@
-// Copyright (c) 2016 Verge Developers
+// Copyright (c) 2016 Nanite Developers
 
 #include <string.h>
 #include "pbkdf2.h"

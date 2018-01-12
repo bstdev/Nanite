@@ -200,7 +200,7 @@ border-bottom-right-radius: 5px;
             </size>
            </property>
            <property name="toolTip">
-            <string>Sign the message to prove you own this VERGE address</string>
+            <string>Sign the message to prove you own this Nanite address</string>
            </property>
            <property name="styleSheet">
             <string notr="true"/>
@@ -409,7 +409,7 @@ max-height: 25px;</string>
             </size>
            </property>
            <property name="toolTip">
-            <string>Verify the message to ensure it was signed with the specified VERGE address</string>
+            <string>Verify the message to ensure it was signed with the specified Nanite address</string>
            </property>
            <property name="styleSheet">
             <string notr="true"/>

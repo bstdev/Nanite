@@ -7211,7 +7211,7 @@ Changes in version 0.2.5.10 - 2014-10-24
       to begin building circuits?" logic most recently in 0.2.4.10-alpha
       (see bug 5956), but we left the bootstrap status event logic at
       "how far through getting 1/4 of them are we?" Fixes bug 9958;
-      bugfix on 0.2.2.36, which is where they diverged (see bug 5343).
+      bugfix on 0.2.2.36, which is where they dinanited (see bug 5343).
 
   o Minor bugfixes (logging):
     - Downgrade "Unexpected onionskin length after decryption" warning

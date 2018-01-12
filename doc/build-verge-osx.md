@@ -17,7 +17,7 @@
 3. Export the required environment variables
 
     ```shell
-    export VERGE_PLATFORM='mac'
+    export Nanite_PLATFORM='mac'
     export CXX=clang++
     export CC=clang
     ```

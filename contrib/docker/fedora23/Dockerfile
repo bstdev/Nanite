@@ -25,18 +25,18 @@ ENV PKG_CONFIG_PATH /usr/local/lib/pkgconfig:$PKG_CONFIG_PATH
 
 RUN yum install -y qt5-qtbase-devel qt5-qttools-devel qt5-qtwebkit-devel qt5-qtwebsockets qrencode-devel
 
-RUN git clone https://github.com/vergecurrency/verge /coin/git
+RUN git clone https://github.com/nanitecurrency/nanite /coin/git
 
 WORKDIR /coin/git
 
-RUN ./autogen.sh && ./configure --with-gui=qt5 && make && mv src/VERGEd /coin/VERGEd
+RUN ./autogen.sh && ./configure --with-gui=qt5 && make && mv src/Nanited /coin/Nanited
 
 WORKDIR /coin
 VOLUME ["/coin/home"]
 
 ENV HOME /coin/home
 
-CMD ["/coin/VERGEd"]
+CMD ["/coin/Nanited"]
 
 # P2P, RPC
 EXPOSE 21102 20102

@@ -82,7 +82,7 @@
  *
  * In all generality, hash functions operate over strings of bits.
  * Individual bits are rarely encountered in C programming or actual
- * communication protocols; most protocols converge on the ubiquitous
+ * communication protocols; most protocols connanite on the ubiquitous
  * "octet" which is a group of eight bits. Data is thus expressed as a
  * stream of octets. The C programming language contains the notion of a
  * "byte", which is a data unit managed under the type <code>"unsigned

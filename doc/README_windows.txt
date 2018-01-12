@@ -1,6 +1,6 @@
-Verge 0.4.0 BETA
+Nanite 0.4.0 BETA
 
-Copyright (c) 2013 Verge Developers
+Copyright (c) 2013 Nanite Developers
 Copyright (c) 2011-2013 PPCoin Developers
 Distributed under the MIT/X11 software license, see the accompanying
 file license.txt or http://www.opensource.org/licenses/mit-license.php.
@@ -11,7 +11,7 @@ cryptographic software written by Eric Young (eay@cryptsoft.com).
 
 Intro
 -----
-Verge is a free open source project derived from PPCoin, with
+Nanite is a free open source project derived from PPCoin, with
 the goal of providing a long-term energy-efficient scrypt-based crypto-currency.
 Built on the foundation of Bitcoin, innovations such as proof-of-stake and scrypt
 help further advance the field of crypto-currency.
@@ -21,9 +21,9 @@ Setup
 -----
 After completing windows setup then run windows command line (cmd)
   cd daemon
-  verged
-You would need to create a configuration file verge.conf in the default
-wallet directory. Grant access to verged.exe in anti-virus and firewall
+  nanited
+You would need to create a configuration file nanite.conf in the default
+wallet directory. Grant access to nanited.exe in anti-virus and firewall
 applications if necessary.
 
 The software automatically finds other nodes to connect to.  You can
@@ -37,10 +37,10 @@ Upgrade
 -------
 All you existing coins/transactions should be intact with the upgrade.
 To upgrade from 0.2.x, first backup wallet
-verged backupwallet <destination_backup_file>
+nanited backupwallet <destination_backup_file>
 Then shutdown ppcoind by
-verged stop
-Start up the new verged (0.3.0).
+nanited stop
+Start up the new nanited (0.3.0).
 
 
 ------------------
